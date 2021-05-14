@@ -42,6 +42,11 @@ https://os.mbed.com/users/DanielKlioc/notebook/udp-static-ip-example-/
 
 I am using mbed-os 6.10, and there is some issue with printf function as mentioned in [here](https://forums.mbed.com/t/hitchhikers-guide-to-printf-in-mbed-6/12492), so I used one of their solution to add `mbed_app.json` at the root of project directory, and the content inside are [here](./mbed_app.json). 
 
+Another printf issues are mentioned here
+- https://forums.mbed.com/t/float-printf-doesnt-work-in-desktop-version/9164
+- https://github.com/ARMmbed/mbed-os/blob/master/platform/source/minimal-printf/README.md
+this will make sure, we can print float numbers out.
+
 ## Test
 
 Just plug the usb cable of mbed to pc and you can use any serial port monitor tool as you like, for convenient I am using Arduino Serial Monitor. So mbed is sending/receiving in the same time.
